@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="tr">
   <head>
+    <style>
+      .empire {
+        border-radius: 12px;
+        text-align: center;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .empire ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .empire ul li {
+        margin: 5px 0;
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Persia'nın Kalbine Hoş Geldiniz</title>
@@ -12,47 +31,47 @@
       <div class="menu">
         <a href="iran.html"><i class="fas fa-home"></i> Ana Sayfa</a>
         <a href="hakkinda.html"><i class="fas fa-info-circle"></i> Hakkında</a>
+        <a href="yemekler.html"><i class="fas fa-utensils"></i> Yemekler</a>
       </div>
     </header>
+    
 
     <!-- Video Section -->
     <div class="video-container">
-      <iframe 
-      src="https://www.youtube.com/embed/Z15fHTSp9fc?autoplay=1&mute=1&loop=1&playlist=Z15fHTSp9fc&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0"
-      frameborder="0" 
-      allow="autoplay; encrypted-media" 
-      allowfullscreen>
-    </iframe>
+      <video autoplay muted loop playsinline>
+        <source src="KERMANSHAH کرمانشاه.mp4" type="video/mp4">
+      </video>
     </div>
-
+    <br>
     <!-- Content Section -->
-    <div class="hakkinda" style="text-align: center; background-color: rgba(0, 0, 0, 0.779); background-size: cover; ">
-      <h1 class="heading">Hooyar Lotfy</h1>
-      <p>
-        Ben teknoloji dünyasına tutkuyla bağlı bir öğrenciyim. Şu anda <strong>React</strong>, <strong>JavaScript</strong>, <strong>Kotlin</strong>, <strong>C++</strong> üzerine yoğunlaşmış durumdayım ve <strong>Unreal Engine</strong> ile oyun geliştirme alanında da kendimi geliştiriyorum. Hem web uygulamaları hem de oyun geliştirme konularına ilgi duyuyorum ve bu becerilerimi dinamik ve etkileşimli projeler yaratmak için kullanmayı hedefliyorum. Her zaman yeni şeyler öğrenmeye ve teknik bilgimi geliştirmeye heyecanlıyım.
-      </p>
-      <p><strong>Beceriler:</strong></p>
-      <ul>
-        <li><strong>React</strong></li>
-        <li><strong>JavaScript</strong></li>
-        <li><strong>Kotlin</strong></li>
-        <li><strong>C++</strong></li>
-        <li><strong>Unreal Engine</strong></li>
-      </ul>
-      <br><br><br><br><br> <br><br><br><br><br><br>
-      <footer class="footer">
-        <div class="social-links">
-          <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p>&copy; 2024 Hooyar Lotfy, Tüm hakları saklıdır.</p>
-      </footer>
-       
+    <div>
+      <section class="empire">
+        <h2 class="heading">Hooyar Lotfy</h2>
+        <p>Ben teknoloji dünyasına tutkuyla bağlı bir öğrenciyim. Şu anda <strong>React</strong>, <strong>JavaScript</strong>, <strong>Kotlin</strong>, <strong>C++</strong> üzerine yoğunlaşmış durumdayım ve <strong>Unreal Engine</strong> ile oyun geliştirme alanında da kendimi geliştiriyorum. Hem web uygulamaları hem de oyun geliştirme konularına ilgi duyuyorum ve bu becerilerimi dinamik ve etkileşimli projeler yaratmak için kullanmayı hedefliyorum. Her zaman yeni şeyler öğrenmeye ve teknik bilgimi geliştirmeye heyecanlıyım.</p>
+      </section>
+
+      <section class="empire" style="margin-top: 150px; padding: 30px;">
+        <h5 class="heading" style="font-size: 30px;"><strong>Beceriler:</strong></h5>
+        <ul>
+          <li><strong>React</strong></li>
+          <li><strong>JavaScript</strong></li>
+          <li><strong>Kotlin</strong></li>
+          <li><strong>C++</strong></li>
+          <li><strong>Unreal Engine</strong></li>
+        </ul>
+      </section>
+
       <audio autoplay loop src="Iran.mp3">play</audio>
     </div>
-    
-    <!-- Footer Section -->
 
+    <!-- Footer Section -->
+    <footer class="footer" style="margin-top: 10%;">
+      <div class="social-links">
+        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2024 Hooyar Lotfy, Tüm hakları saklıdır.</p>
+    </footer>
   </body>
 </html>
