@@ -16,6 +16,25 @@
       .slider img {
         opacity: 0.85; /* Adjust the value as needed */
       }
+      .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: scale(1.6);
+      }
+      .video-container iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        
+      }
     </style>
   </head>
   <body>
@@ -28,12 +47,9 @@
       </div>
     </header>
     
-
     <!-- Video Section -->
     <div class="video-container">
-      <video autoplay muted loop playsinline>
-        <source src="KERMANSHAH کرمانشاه.mp4" type="video/mp4" alt="Kirmanşah Video">
-      </video>
+      <iframe src="https://www.youtube.com/embed/yhXcl7rAKgE?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&loop=1&playlist=yhXcl7rAKgE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
     <!-- Intro Section -->
@@ -46,8 +62,12 @@
       <section class="intro" style="text-align: center; background-color: rgba(0, 0, 0, 0.662); padding: 20px; border-radius: 10px;" >
         <h1 class="heading">Kirmanşah'ın Tarihi ve Mirası</h1>
         <p>Kirmanşah, İran'ın batısında yer alan ve zengin tarihi ile bilinen bir şehirdir. Bu şehir, birçok büyük imparatorluğun merkezi olmuştur ve kültürel mirası ile dikkat çekmektedir.</p>
+      
+
+
+
       </section>
-      <br><br>
+    <br>
       <!-- Empire Subsections -->
       <section class="empire">
         <h2>1) Med İmparatorluğu</h2>
@@ -64,7 +84,6 @@
         <p>Sasaniler, İran'ı yeniden birleştirerek Kirmanşah’ı bir kez daha tarih sahnesine çıkarmışlardır. Bu dönemde Kirmanşah, Sasanilerin kültürel, dini ve askeri zaferlerine tanıklık etmiştir. Sasanilerin etkisiyle Kirmanşah, sadece İran’ın değil, bölgenin de en önemli şehirlerinden biri haline gelmiştir...</p>
       </section>
 
-      <br><br>
 
       <section class="empire">
         <h2>5) Pehlevi Dönemi</h2>
